@@ -1,4 +1,4 @@
-import CarrouselTextBanner from "@/components/carrousrl-text-banner";
+import CarrouselTextBanner from "@/components/carrousel-text-banner";
 
 export default function Home() {
   return (
