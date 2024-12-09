@@ -1,10 +1,9 @@
-import { Button } from "@/components/ui/button";
+import CarrouselTextBanner from "@/components/carrousrl-text-banner";
 
 export default function Home() {
   return (
     <main>
-      Hello from home
-      <Button>Click me</Button>
+     <CarrouselTextBanner/>
     </main>
   );
 }

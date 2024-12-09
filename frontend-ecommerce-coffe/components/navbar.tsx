@@ -1,6 +1,9 @@
 "use client"
-import { LucideShoppingCart } from "lucide-react";
+import { Heart, LucideShoppingCart, User } from "lucide-react";
 import { useRouter } from "next/navigation";
+import ItemsMenuMobile from "./items-menu-mobile";
+import MenuList from "./menu-list";
+import ToggleTheme from "./toggle-theme";
 
 const Navbar = () => {
     const router = useRouter()
@@ -10,13 +13,16 @@ const Navbar = () => {
                 El Rincón del Café
             </h1>
             <div className="items-center justify-between hidden sm:flex">
-                <p>Menu desktop</p>
+                <MenuList/>
             </div>
             <div className="flex sm:hidden">
-                <p>Menu movil</p>
+                <ItemsMenuMobile/>
             </div>
             <div className="flex items-center justify-between gap-2 sm:gap-7">
                 <LucideShoppingCart strokeWidth="1" className="cursor-pointer" onClick={() => router.push("/cart")}/>
+                <Heart strokeWidth="1"  className="cursor-pointer"  onClick={() => router.push("/favourites")}/>
+                <User strokeWidth="1" className="cursor-pointer"/>
+                <ToggleTheme/>
             </div>
         </div>
     );
