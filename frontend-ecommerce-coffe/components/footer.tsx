@@ -50,7 +50,7 @@ const Footer = () => {
                 <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
                     &copy; 2024
                     <Link href="#">TechnologyAdvanceSolutions</Link>
-                    Todos los derechos reservados
+                    <span className="ml-2">Todos los derechos reservados</span>
                 </span>
             </div>
         </footer>
