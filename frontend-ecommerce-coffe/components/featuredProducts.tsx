@@ -2,11 +2,11 @@
 
 import { useGetFeaturedProduct } from "@/api/useGetFeaturedProducts";
 import { ProductType } from "@/types/product";
-import { ResponseType } from "@/types/response";
+import { ResponseType } from "@/types/responseProduct";
 import { Expand, ShoppingCart } from "lucide-react";
 import { useRouter } from "next/navigation";
-import IconButton from "./icon-button";
-import SkeletonSchema from "./skeleton-Schema";
+import IconButton from "./iconButton";
+import SkeletonSchema from "./skeletonSchema";
 import { Card, CardContent } from "./ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "./ui/carousel";
 
